@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Myeongjo";
+  font-weight: 700;
+  src: url("../fonts/NanumMyeongjo-Bold.woff");
+}
+
+.title{
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #0351C5;
+} 
+.title ul{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  padding: 0;
+}
+.title li{
+  text-align: center;
+  list-style-type: none;
+  color: #57575F;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: -0.28px;
+}
+.title h2{
+  margin: 0;
+  color: #0351C5;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.6px;
+  text-align: center;
+}
+.greetings{
+  padding-top: 32px;
+  width: 860px;
+  margin: 0 auto;
+}
+.greetings .cont_bnr{
+  margin-bottom: 30px;
+}
+.greetings .cont_bnr img{
+/*	
+  width: 100%;
+  height: 100%;
+ */ 
+}
+.mBr,
+.greetings .cont_bnr img:last-of-type{
+  display: none;
+}
+.cont_tit{
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Myeongjo";
+  color: #08080A;
+  letter-spacing: -0.48px;
+  line-height: 1.5;
+}
+.cont_tit span{
+  color: #00367B;
+}
+.cont_txt{
+  margin-bottom: 40px;
+  font-size: 19px;
+  font-weight: 400;
+  color: #08080A;
+  letter-spacing: -0.32px;
+  line-height: 1.5;
+}
+.cont_name{
+  text-align: right;
+  font-size: 19px;
+  font-weight: 400;
+  color: #08080A;
+  letter-spacing: -0.32px;
+}
+.cont_name span{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  font-family: "Nanum Myeongjo", serif;
+}
+@media screen and (max-width: 1280px) {
+  .title{
+    width: calc(100vw*(1200/1280));
+    padding-bottom: calc(100vw*(8/1280));
+  } 
+  .title ul{
+    margin-bottom: calc(100vw*(6/1280));
+  }
+  .title li{
+    font-size: calc(100vw*(14/1280));
+  }
+  .title h2{
+    font-size: calc(100vw*(40/1280));
+  }
+  .greetings{
+    padding-top: calc(100vw*(32/1280));
+    width: calc(100vw*(860/1280));
+  }
+  .greetings .cont_bnr{
+    margin-bottom: calc(100vw*(30/1280));
+  }
+  .cont_tit{
+    margin-bottom: calc(100vw*(20/1280));
+    font-size: calc(100vw*(24/1280));
+  }
+  .cont_txt{
+    margin-bottom: calc(100vw*(40/1280));
+    font-size: calc(100vw*(16/1280));
+  }
+  .cont_name{
+    font-size: calc(100vw*(16/1280));
+  }
+  .cont_name span{
+    font-size: calc(100vw*(18/1280));
+  }
+}
+@media screen and (max-width: 768px) {
+  .title{
+    width: calc(100vw*(340/375));
+    padding-bottom: calc(100vw*(8/375));
+  } 
+  .title ul{
+    margin-bottom: calc(100vw*(2/375));
+  }
+  .title li{
+    font-size: calc(100vw*(13/375));
+  }
+  .title h2{
+    font-size: calc(100vw*(22/375));
+  }
+  .greetings{
+    padding-top: calc(100vw*(20/375));
+    width: calc(100vw*(340/375));
+  }
+  .greetings .cont_bnr{
+    margin-bottom: calc(100vw*(16/375));
+  }
+  .pBr,
+  .greetings .cont_bnr img:first-of-type{
+    display: none;
+  }
+  .mBr,
+  .greetings .cont_bnr img:last-of-type{
+    display: block;
+  }
+  .cont_tit{
+    margin-bottom: calc(100vw*(10/375));
+    font-size: calc(100vw*(14/375));
+  }
+  .cont_txt{
+    margin-bottom: calc(100vw*(30/375));
+    font-size: calc(100vw*(14/375));
+  }
+  .cont_name{
+    font-size: calc(100vw*(14/375));
+  }
+  .cont_name span{
+    font-size: calc(100vw*(16/375));
+  }
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* m-visual-area */
+.m-visual-wrap {overflow:hidden;position:relative;top:0;left:0;width:1400px;height:650px;margin:0 auto;}
+.m-visual-wrap > .contents-bro {top:295px;left:0;}
+.m-visual-wrap > .contents-bro > a {top:0;left:0;width:24px;height:63px;}
+.m-visual-wrap > .contents-bro .indicator {top:77px;left:180px;width:70px;}
+.m-visual-wrap > .contents-bro .btn-ssrm {top:83px;left:237px;}
+.m-visual-wrap > .contents-bro .btn-prev {left:90px;background:url(/resources/img/main/btn-visual-prev.png) no-repeat}
+.m-visual-wrap > .contents-bro .btn-next {left:1285px;background:url(/resources/img/main/btn-visual-next.png) no-repeat}
+.m-visual-wrap > .contents-bro .indicator {width:70px;}
+.m-visual-wrap .contents-bro {position:absolute;z-index:50;}
+.m-visual-wrap .contents-bro > a {position:absolute;}
+.m-visual-wrap .contents-bro .indicator {position:absolute;}
+.m-visual-wrap .contents-bro .indicator a {display:inline-block;height:10px;}
+.m-visual-wrap .contents-bro .indicator a {width:10px;background:url(/resources/img/main/visual-slide-indicator.png) no-repeat}
+.m-visual-wrap .contents-bro .indicator a.atv {width:19px;background:url(/resources/img/main/visual-slide-indicator-atv.png) no-repeat}
+.m-visual-wrap .contents-bro .btn-ssrm {position:absolute;}
+.m-visual-wrap .contents-bro .btn-ssrm a {display:inline-block;width:10px;text-indent:-999px;}
+.m-visual-wrap .contents-bro .btn-ssrm.stop a {background:url(/resources/img/main/visual-slide-stop.png) no-repeat;}
+.m-visual-wrap .contents-bro .btn-ssrm.play a {background:url(/resources/img/main/visual-slide-play.gif) no-repeat;}
+.m-visual-area {width:4200px;}
+.m-visual-area .visual-cont-wrap {position:absolute;top:0;left:0;width:1400px;height:650px;margin:0 auto;background:url(/resources/img/main/visual-img01.jpg) no-repeat;}
+.m-visual-area > .visual-cont-wrap:first-child > h2 img {display:block;}
+.m-visual-area > .visual-cont-wrap > h2 {position:absolute;left:160px;top:139px;}
+.m-visual-area > .visual-cont-wrap > .module-group {position:relative;top:35px;left:0;height:580px;margin-left:661px;}
+.m-visual-area > .visual-cont-wrap > .module-group > div {display:inline-block;}
+.module-group > div > a {display:block;}
+.module-work {position:absolute;top:0;left:0;}
+.module-group .module-work > a {width:286px;}
+.module-group .module-duties {position:absolute;top:0;left:294px;}
+.module-group .module-motto {position:absolute;top:0;left:441px;}
+.module-group .module-history {position:absolute;top:196px;left:294px;}
+.module-group .module-introduction {position:absolute;top:391px;left:0;}
+.module-group .module-message {position:absolute;top:391px;left:294px;}
+.module-group .module-notice {position:absolute;top:391px;left:441px;}

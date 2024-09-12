@@ -1,0 +1,555 @@
+
+@charset "utf-8";
+
+/* content */
+/* ï¿½ë“¯ë¹€å¯ƒï¿½ï¿½ï¿½ */
+.total-search {float:none !important;width:auto !important;}
+.search-detail-input {padding:48px 125px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-search-result.png) no-repeat;}
+.search-detail-input button {min-width:80px;margin-left:13px;}
+.search-detail-input .search-input {position:relative;top:0;left:0;padding:0 0 10px 0;}
+.search-detail-input .search-input .label-area {width:660px;padding:0 0 10px 40px;background:url(https://eng.nis.go.kr/resources/img/ico/ico-search.png) no-repeat 9px 12px;border-bottom:1px solid #c9cbcd;letter-spacing:-1px;}
+.search-detail-input .search-input .label-set label {color:#999;font-size:26px;}
+.search-detail-input .search-input .label-set input {width:660px;background:none;border:none;color:#666;font-size:26px;}
+.search-detail-input .search-input .btn-search {position:absolute;top:9px;right:0;min-width:inherit;padding:0;}
+.search-detail-input .icheckbox-s .icheckbox {top:5px;left:10px;width:19px;height:19px;background-position:-196px -4px;}
+.search-detail-input .icheckbox-s .icheckbox:hover {top:5px;left:10px;width:19px;height:19px;background-position:-218px -4px;}
+.search-detail-input .icheckbox-s .icheckbox.checked {top:5px;left:10px;width:19px;height:19px;background-position:-239px -4px;}
+.search-detail-input .icheckbox-s .icheck-reverse {padding:0 0 0 38px;}
+.search-num-view {margin-top:18px;padding:19px 0 18px;background:#f7f8f9;text-align:center;font-size:18px;}
+.search-num-view p strong {font-family:"Segoe UI Semibold","Segoe UI";font-weight:600;}
+.search-result-view {margin-top:40px;}
+.search-result-view .tab-area.brown-type {padding:99px 0 0;}
+.search-result-view .tab-area.brown-type.col4 .tabs {width:270px;}
+.search-result-view .tab-area.brown-type.col4 .tabs span {display:inline-block;vertical-align:top;color:#8a8a8a;}
+.search-result-view .tab-area.brown-type.col4 .tabs.second {left:270px;}
+.search-result-view .tab-area.brown-type.col4 .tabs.third {left:540px;}
+.search-result-view .tab-area.brown-type.col4 .tabs.fourth {left:810px;}
+.search-result-view .tab-area.brown-type.col4 .tabs.atv span {color:#b37a51;}
+.search-result-view .result-cont .part-tit:first-child {margin-top:0;}  
+.search-result-view .result-noCont {margin-top:16px;padding:66px 25px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;text-align:center;font-size:17px;}
+.search-result-view .part-tit {margin-top:60px;padding-left:25px;font-size:20px;}
+.search-result-view .part-tit > strong {font-family:"Segoe UI Semibold","Segoe UI";font-weight:normal;}
+.search-result-view .part-tit > strong:first-child {color:#547fb3;font-size:22px;}
+.search-result-view .part-text-wrap {margin-top:16px;padding:25px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+.search-result-view .part-text-wrap + .part-text-wrap {margin-top:0;border-top:none;}
+.search-result-view .contain-txt > a {color:#666;}
+.search-result-view .contain-txt > a:hover {text-decoration:underline;}
+.search-result-view .contain-txt em {color:#d74040;}
+.search-result-view .contain-navi {margin-bottom:20px;font-size:17px;color:#666;}
+.search-result-view .contain-navi span {display:inline-block;padding:0 11px 0 3px;vertical-align:top;background:url(https://eng.nis.go.kr/resources/img/bg/bg-location-arrow.png) no-repeat 100% 9px;}
+.search-result-view .contain-navi a {color:#666;text-decoration:underline;}
+.search-result-view .contain-navi a strong {font-family:"Segoe UI Semibold";}
+.search-result-view .contain-navi em {color:#d74040;}
+.search-result-view .btn-more {display:block;padding:10px 0 11px;background:#f9f9fa;border-bottom:2px solid #eee;text-align:center;font-weight:bold;color:#666;}
+.search-result-view .btn-more span {padding-right:27px;background:url(https://eng.nis.go.kr/resources/img/ico/ico-down-open.png) no-repeat right center;font-family:"Segoe UI Semibold";}
+
+/* ie8 button ï¿½ï¿½ */
+@media \0screent {
+	.search-detail-input button {min-width:20px;}
+}
+
+/* error page */
+.error-wrap {position:absolute;top:50%;left:50%;width:680px;margin:-133px 0 0 -340px;}
+.error-wrap .inner {min-height:221px;padding:0 0 0 241px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-error.png) no-repeat 0 10px;}
+.error-wrap .inner .er-title {color:#324773;font-size:20px;font-weight:600;font-family:"Segoe UI Semibold","Segoe UI";}
+.error-wrap .inner .er-cont {margin-top:15px;padding:13px 0 14px 0;border-top:1px solid #cbcbcb;border-bottom:1px solid #cbcbcb;}
+.error-wrap .inner .er-cont > p + p {margin-top:10px;}
+.error-wrap .inner .btn-area a:first-child {margin-left:0;}
+.error-wrap .inner .btn-area a {width:142px;padding:0;}
+
+/* ï¿½ëŒìŠœï¿½ëˆê¶¡ > sitemap */
+.contents > .box-sitemap + div {margin-top:60px;}
+.box-sitemap > h3 {padding:20px 0 15px 19px;margin-bottom:39px;border-top:2px solid #e5e5e5;border-bottom:2px solid #e5e5e5;}
+.list-sitemap {padding-left:20px;}
+.list-sitemap > li {float:left;width:347px;min-height:23px;;margin:0 0 15px 0;}
+.list-sitemap > li.gap {margin-left:45px;}
+.list-sitemap.security > li.he-sitemap {min-height:137px;}
+.list-sitemap.nis > li.min-height {min-height:163px;}
+.list-sitemap > li.he-none {min-height:23px;margin:0;}
+.list-sitemap > li.he-none.gap {margin-left:45px;}
+.list-sitemap > li > h4 {padding:0 8px 8px 5px;margin-bottom:15px !important;border-bottom:3px solid #f5f6f8;font-size:0 !important;}
+.list-sitemap > li.he-none > h4 {margin-bottom:0 !important;}
+.list-sitemap > li > h4 > a {display:block;height:15px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-sitemap-arrow.png) no-repeat right center;}
+.list-sitemap > li > ul > li {padding:6px 0 6px 4px;border-bottom:1px solid #f2f2f2;}
+.list-sitemap > li > ul > li + li {margin-top:7px;}
+.list-sitemap > li > ul > li > a {display:block;font-size:0;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ï¿½æ€¨ë“­ë‹”ï¿½ï¿½ index */
+
+.anti-com-area {padding:38px 20px 37px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security01-01.png) no-repeat 35px 50px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+.anti-com-area .security-investigation {padding: 20px};
+.basic-disc-txt {position:relative;}
+.basic-disc-txt h4 {display:block;margin-bottom:15px;color:#4f689b;font-size:18px;font-weight:bold;}
+.basic-disc-txt h3.small-headings {margin-bottom:9px !important;line-height:27px;}
+.basic-disc-txt h3.small-headings + h3.small-headings {margin-top:51px;}
+.basic-disc-txt p {line-height:24px;}
+.basic-disc-txt p + .small-headings {margin-top:50px;}
+.basic-disc-txt h4 + p, .basic-disc-txt .small-headings + p, .basic-disc-txt h4 + ul li, .basic-disc-txt .small-headings + ul li, .basic-disc-txt h4 + .clearfix ul li, basic-disc-txt .small-headings + .clearfix ul li {line-height:24px;}
+.basic-disc-txt h4 + ul li + li, .basic-disc-txt .small-headings + ul li + li, .basic-disc-txt h4 + .clearfix ul li + li, .basic-disc-txt .small-headings + .clearfix ul li + li {margin-top:12px;}
+.basic-disc-txt ul + h4, .basic-disc-txt ul + .small-headings {margin-top:46px;}
+.basic-disc-txt h4 + h4 {margin-top:34px;}
+.basic-disc-txt p + p {margin-top:6px;}
+.basic-disc-txt .clearfix .flow {width:447px;}
+.basic-disc-txt .clearfix .reverse > p + img {margin-top:20px;}
+.basic-disc-txt .clearfix + h4 {margin-top:35px;}
+.basic-disc-txt .noti-txt {margin-top:3px;padding-left:15px;color:#999;text-indent:-16px;}
+.basic-disc-txt.more-depth .list.square li + li {margin-top:11px;}
+.basic-disc-txt .pic-duble + h4 {margin-top:34px;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ï¿½æ€¨ë“­ë‹”ï¿½ï¿½ > éºê³¹ë¸³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ç§»â‘¦ë‹¾ì¨Œï¿½ê¾¨ì»» ï¿½Ñˆêµ” */
+.define-list dl {*zoom:1;}
+.define-list dl:after {display:block;content:"";clear:both;}
+.define-list dl dt {float:left;width:80px;letter-spacing:0;}
+.define-list dl dd {float:left;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ï¿½æ€¨ë“­ë‹”ï¿½ï¿½ >  ï¿½ëˆë‚«ï¿½ê¾ªë¹ï¿½â‘¥ê»œ ï¿½ê¾ªì†´ */
+.bd-top {border-top:2px solid #e5e5e5;}
+.small-disc-txt strong {display:block;color:#4f689b;}
+.small-disc-txt p {margin-top:15px;line-height:24px;}
+.small-disc-txt p + strong {margin-top:30px;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ï¿½æ€¨ë“­ë‹”ï¿½ï¿½ >  äºŒì‡±ìŠ‚ï¿½ì„ê¶—å¯ƒê³Œë‚µ */
+.box-inci {padding-bottom:34px; border-bottom:1px solid #dedede;}
+.box-inci h5 + p {padding:13px 0 7px;}
+.box-inci p > span.disc {display:block;margin-top:4px;color:#999;}
+.box-inci-exp {margin-top:60px;padding:44px 0 46px;border-top:1px solid #dedede;}
+h4 + .list-inci {padding-top:0;}
+.list-inci {padding:13px 0 7px;}
+.list-inci li {margin-top:24px;}
+.list-inci li:first-child {margin-top:0;}
+.list-inci li p.noti-txt {margin-top:4px;padding-left:15px; text-indent:-17px; color:#999;}
+.list-inci-exp li {float:left;}
+.list-inci-exp > li:first-child {width:739px;}
+.list-inci-exp > li.inci-list2 {width:377px; padding:0 22px 0 0; border-right:2px solid #eee;}
+.list-inci-exp > li.inci-list3 {width:325px; padding-left:23px;}
+.list-inci-exp > li > h5 {padding-bottom:22px; background:url(https://eng.nis.go.kr/resources/img/bg/bg-inci-charter01.png) no-repeat left top;}
+.list-inci-exp > li .inci-route {width:739px; height:150px; padding-bottom:40px; background:url(https://eng.nis.go.kr/resources/img/bg/bg-inci-route.png) no-repeat left top;}
+.list-inci-exp > li strong {display:block; padding:25px 0 12px;}
+.list-inci-exp > li.inci-list2 strong {background:url(https://eng.nis.go.kr/resources/img/bg/bg-inci-charter02.png) no-repeat left top;}
+.list-inci-exp > li.inci-list3 strong {background:url(https://eng.nis.go.kr/resources/img/bg/bg-inci-charter03.png) no-repeat left top;}
+.list-inci-exp > li ul li {margin-top:11px; ;}
+.list-inci-exp > li ul li:first-child {margin-top:0;}
+.pic-duble.m-result {margin-top:50px;}
+.pic-duble.m-result li > img {border:none;}
+.pic-duble.type01 ul {margin-left:25px;}
+.pic-duble.type01 li {width:322px;margin-left:25px;}
+.pic-duble.type02 ul {margin-left:0;}
+.pic-duble.type02 li {float:none;width:auto;margin-left:0;text-align:center;}
+.pic-duble.type03 {position:absolute;top:50px;right:0;margin-top:0;}
+.pic-duble.type04 {position:absolute;top:515px;right:0;margin-top:0;}
+.pic-duble.type05 {width:451px;margin:50px auto 0;}
+.pic-duble.type05 > .flow {width:225px;}
+.pic-duble.type05 > .flow + .flow {width:185px;margin-left:40px;}
+.pic-duble.type05 > .flow + .flow p {padding:6px 0;}
+.pic-duble.type05 > .flow + .flow p + img {padding-top:10px;}
+.pic-duble.type06 {width:653px;margin:50px auto 0;}
+.pic-duble.type06 > .flow {width:394px;}
+.pic-duble.type06 > .flow p {padding:10px 0 6px;}
+.pic-duble.type06 > .flow + .flow {width:250px;margin-left:9px;}
+.pic-duble.type06 > .flow + .flow p {padding:10px 0 6px;}
+.pic-duble.type06 > .flow + .flow p + img {padding-top:5px;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ï¿½éºê³¸ì ™è¹‚ï¿½ */
+.north-info-area {padding:39px 20px 37px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security02-01.png) no-repeat 24px 64px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ëŒì‡…ï¿½ëº£ë‚« */
+.foreign-info-area {padding:42px 20px 32px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security03-01.png) no-repeat 8px 86px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > è«›â‘¹êº½ */
+.antiespionage-area {padding:38px 20px 31px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security04-01.png) no-repeat 18px 37px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > è«›â‘¹êº½ > è«›â‘¹êº½åª›ì’•ë€— */
+.with-img.sc-nis > img {width:160px;}
+.with-img.sc-nis .ci-disc {width:570px;margin-left:34px;}
+.with-img .ci-disc > h4 {line-height:22px;}
+.with-img .ci-disc > h4 + ul {margin-top:20px;}
+.with-img .ci-disc > h4 + ul li + li {margin-top:15px;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ê³—ë¾½è¹‚ëŒë¸ž */
+.business-area {padding:35px 20px 42px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security05-01.png) no-repeat 46px 78px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+.bangsan-area {padding:35px 20px 42px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security06-001.png) no-repeat 46px 78px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+.gradation-box {margin-top:10px;padding:27px 0 0;background:url(https://eng.nis.go.kr/resources/img/bg/bg-gradation-box.png) no-repeat;}
+.gradation-box .inner {padding:0 20px 26px 36px;;background:url(https://eng.nis.go.kr/resources/img/bg/bg-gradation-box.png) no-repeat 0 100%;}
+.gradation-box.tall {background:url(https://eng.nis.go.kr/resources/img/bg/bg-gradation-box2.png) no-repeat;}
+.gradation-box.tall .inner {background:none;}
+.gradation-box.tall .duties-list {padding:10px 0 10px 14px;}
+.gradation-box.tall .duties-list li {padding-left:20px;text-indent:-20px;}
+.gradation-box.tall .duties-list li ol {padding-left:20px;}
+.gradation-box.tall .duties-list li ol li {padding:10px 0 0;}
+.gradation-box .b-tit {display:block;margin:0 0 13px -15px;padding-left:13px;color:#6576a1;font-size:17px;background:url(https://eng.nis.go.kr/resources/img/ico/blt-arrow-left.png) no-repeat 0 7px;font-weight:bold;}
+.gradation-box .s-tit {display:block;font-weight:bold;}
+.gradation-box .n-txt {line-height:24px;letter-spacing:-1px;}
+.gradation-box .n-txt + .n-txt {margin-top:20px;}
+.gradation-box .n-txt + .s-tit {margin-top:20px;}
+
+/* ï¿½ì¢Šë±ºï¿½ì’–ë¸žè¹‚ï¿½ > ï¿½ê³—ë¾½è¹‚ëŒë¸ž > ï¿½ê³—ë¾½ï¿½ã…½ë™†ï¿½ï¿½ ï¿½ì•¸í€Žï¿½ë¶¾ì¡Š */
+.btn-area {position:relative;}
+
+/* ï¿½ì¢Šë±ºï¿½ì’–ë¸žè¹‚ï¿½ > ï¿½ê³—ë¾½è¹‚ëŒë¸ž > ï¿½ë‚…Ð¢ ï¿½ï¿½ ï¿½ê³—ë¾½è¹‚ëŒë¸ž ï¿½ë°ë£žï¿½ì„íŠƒ */
+.conduct .btn-nonring a {display:block;position:absolute;top:287px;width:31px;height:62px;}
+.conduct .btn-nonring a.btn-prev {left:20px;background:url(https://eng.nis.go.kr/resources/img/btn/btn-cartoon-prev.png) no-repeat left top;}
+.conduct .btn-nonring a.btn-next {right:20px;background:url(https://eng.nis.go.kr/resources/img/btn/btn-cartoon-next.png) no-repeat left top;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ï¿½ï¿½ëš®ìœ­ */
+.b-terror-area {padding:37px 20px 38px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security06-01.png) no-repeat 20px 71px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+
+.cyber_faq_q{line-height:24px;border-top:1px dotted #999;border-bottom:1px dotted #999;margin-left:20px;padding:12px 5px;background:#fbfbfb;font-family:"Segoe UI Semibold","Segoe UI"}
+.cyber_faq_a{margin-left:20px;	}
+.faq_tit_01{font-size:22px;font-family:"Segoe UI Semibold","Segoe UI"}
+.faq_tit_02{font-size:18px;font-family:"Segoe UI Semibold","Segoe UI"}
+
+/* ï¿½ì¢Šë±ºï¿½ì’–ë¸žè¹‚ï¿½ > ï¿½ÑŠì” è¸°ê¾©ë¸žè¹‚ï¿½ > è¹‚ëŒë¸žï¿½ê³¹ë¹€ï¿½ê¹ƒï¿½ï§ï¿½ */
+.box-ccevc.first-view {margin-top:13px;}
+.box-ccevc > h4 {padding-bottom:4px;}
+.box-ccevc.first-view table {border-bottom:none;}
+.box-ccevc.more-table table {border-top:none;border-bottom:none;}
+.box-ccevc.more-table thead {overflow:hidden;position:absolute;left:0;top:0;width:1px;height:1px;line-height:0;text-indent:-9999px;}
+.btn-ccevc {display:block;padding:10px 0 11px;margin:-2px 0 24px;background:#f9fcfd;border-top:2px solid #89989a;border-bottom:1px solid #dedede;text-align:center;color:#666;font-family:"Segoe UI Semibold","Segoe UI";font-weight:normal;}
+.btn-ccevc.close span {padding-right:27px;background:url(https://eng.nis.go.kr/resources/img/ico/ico-up-close.png) no-repeat right center;}
+.btn-ccevc.open span {padding-right:27px;background:url(https://eng.nis.go.kr/resources/img/ico/ico-down-open.png) no-repeat right center;}
+
+.box-ccevc2.first-view {margin-top:13px;}
+.box-ccevc2 > h4 {padding-bottom:4px;}
+.box-ccevc2.first-view table {border-bottom:none;}
+.box-ccevc2.more-table table {border-top:none;border-bottom:none;}
+.box-ccevc2.more-table thead {overflow:hidden;position:absolute;left:0;top:0;width:1px;height:1px;line-height:0;text-indent:-9999px;}
+.btn-ccevc2 {display:block;padding:10px 0 11px;margin:-2px 0 24px;background:#f9fcfd;border-top:2px solid #89989a;border-bottom:1px solid #dedede;text-align:center;color:#666;font-family:"Segoe UI Semibold","Segoe UI";font-weight:normal;}
+.btn-ccevc2.close span {padding-right:27px;background:url(https://eng.nis.go.kr/resources/img/ico/ico-up-close.png) no-repeat right center;}
+.btn-ccevc2.open span {padding-right:27px;background:url(https://eng.nis.go.kr/resources/img/ico/ico-down-open.png) no-repeat right center;}
+.txt-ccevc {margin-top:24px;padding:0 0 8px 16px;text-indent:-16px;color:#547fb3;}
+p+.vertical-type2{margin-top:13px}
+.faq-suit {margin:53px 0 11px 0 !important;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ÑŠì” è¸°ê¾©ë¸žè¹‚ï¿½ */
+.cyber-area {padding:38px 20px 39px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security07-01.png) no-repeat 15px 59px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+.cyber-system-figure {padding:17px 0 0;}
+.validation-process-figure {padding:31px 0 0;}
+.safe-module-list {margin-top:60px;}
+.safe-module-list li {padding-left:22px;text-indent:-22px;}
+.safe-module-list li > .number {display:inline-block;width:15px;height:15px;margin:4px 7px 0 0;background:url(https://eng.nis.go.kr/resources/img/bg/bg-numbering.png) no-repeat;color:#fff;text-align:center;line-height:15px;font-size:11px;vertical-align:top;text-indent:0;}
+.safe-module-list li + li {margin-top:20px;}
+.box-cmv {padding-top:53px;}
+.box-cmv p + h4 {margin-top:50px;}
+.box-cmv h4 + p + p {padding-bottom:3px;margin-top:34px;}
+.list-cmv {padding:12px 0 11px;color:#547fb3;}
+.list-cmv.indent-list {padding-left:17px;text-indent:-17px;}
+.overflows {overflow:hidden;width:100%;padding:0 0 3px;}
+.overflows span {float:left;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > æ´ï¿½ì £è¸°ë¶¿ì¦² */
+.global-area {padding:35px 20px 45px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security08-01.png) no-repeat 20px 96px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+
+/* ï¿½ì¢Šë±ºï¿½ì’–ë¸žè¹‚ï¿½ > æ´ï¿½ì £è¸°ë¶¿ì¦² > æ´ï¿½ì £è¸°ë¶¿ì¦²ï¿½ì¢ì‚Ž */
+.accordion-area .acc-title .num {position:absolute;top:24px;left:25px;}
+.accordion-area .acc-contents p.arrow {float:left;padding:34px 30px 0 83px;}
+.accordion-area .acc-contents div.flow > p {padding-bottom:27px;}
+.accordion-area .acc-contents div.flow > strong {display:block;padding-bottom:8px;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > æ´ï¿½ï¿½è¹‚ëŒë¸ž */
+.security-area {padding:40px 20px 40px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security09-01.png) no-repeat 22px 56px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > éºê³¹ë¸³ï¿½ëŒ„ê¹‰äºŒì‡°ï¿½è¹‚ëŒ„ìƒ‡ */
+.north-care-area {padding:39px 20px 39px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security10-01.png) no-repeat 32px 37px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+
+/* ï¿½ì¢Šë±ºï¿½ï¿½ ï¿½ëˆë‚« > ï¿½ê³—ï¼œï¿½ëˆë‚« ï¿½ëº£ë‚« */
+.space-security-area {padding:42px 20px 42px 244px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-security12-01.png) no-repeat 0 center;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > ï¿½ëª„ê¶—ï§ï¿½ */
+.greeting-wrap {padding:59px 0 30px 20px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis01.png) no-repeat 100% 46px;}
+.greeting-area .bg-bar {margin:17px 0 20px;padding-left:20px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis01-bar.png) no-repeat 0 7px;}
+.greeting-area p {line-height:24px;}
+.greeting-area p.paragraph {margin-top:8px;}
+.greeting-area + .nis-txt {margin-top:42px;padding-right:53px;text-align:right;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > ï§žê³·Ð¢ */
+.work-area {padding:52px 20px 59px 218px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis02-01.png) no-repeat 20px 35px;border-top:3px solid #e5e5e5;border-bottom:2px solid #e5e5e5;}
+.work-law-list {width:100%;/*background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis02-02.png) no-repeat center 68px;*/}
+.work-prog {margin-top:50px;padding:40px 30px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis02-03.png) no-repeat;}
+.work-prog .work-prog-cont {min-height:120px;padding:17px 0 0 177px;}
+.work-prog .work-prog-cont + .work-prog-cont {margin-top:13px;}
+.work-prog .work-prog-cont > strong {font-size:18px;font-family:"Segoe UI Semibold"."Segoe UI";font-weight:normal;}
+.work-prog .work-prog-cont > p {margin-top:10px;line-height:24px;}
+.work-prog .work-prog-cont.mind01 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis02-03-01.png) no-repeat 18px 0;}
+.work-prog .work-prog-cont.mind02 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis02-03-02.png) no-repeat 18px 0;}
+.work-prog .work-prog-cont.mind03 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis02-03-03.png) no-repeat 18px 0;}
+.work-prog .work-prog-cont.mind04 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis02-03-04.png) no-repeat 18px 0;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > ï¿½ë¨°ì• */
+.moral-wrap {padding:42px 0 30px 20px;}
+.moral-area {padding:25px 0 0 20px;border-top:2px solid #e5e5e5;}
+.moral-area h4 {padding:35px 0 29px;}
+.moral-area p {line-height:24px;}
+.moral-area p + p {margin-top:8px;}
+.moral-area p > strong {font-size:18px;font-family:"Segoe UI Semibold"."Segoe UI";font-weight:600;}
+.moral-area .moral-tit + p {margin-top:3px;}
+.moral-tit > em {font-size:50px;font-family:"Adobe Song Std";color:#4ea9e7;}
+.moral-tit > em + strong {color:#b1b9be;vertical-align:bottom;}
+.moral-tit > em > img {vertical-align:middle;}
+.moral-tit.color-type > em {color:#16b78f;}
+.moral-list + .moral-list {margin-top:30px;}/* 20210603 ìˆ˜ì • */
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > ï§žê³¸ìï¿½ã…»â”ï¿½ëš¯ì˜£ */
+.ethics-area {padding:60px 20px 60px 226px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis04-01.png) no-repeat 30px 37px;border-top:3px solid #e5e5e5;border-bottom:3px solid #e5e5e5;}
+.ethics-disc {padding:54px 218px 60px 20px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis04-02.png) no-repeat 90% 60px;}
+.ethics-charter {border-top:1px solid #e5e5e5;*zoom:1;}
+.ethics-charter li {float:left;width:177px;margin:50px 0 0 20px;padding:0 0 0 62px;line-height:24px;}
+.ethics-charter li:after {display:block;content:"";clear:both;}
+.ethics-charter li.charter01 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis04-charter01.png) no-repeat left 6px;}
+.ethics-charter li.charter02 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis04-charter02.png) no-repeat left 6px;}
+.ethics-charter li.charter03 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis04-charter03.png) no-repeat left 6px;}
+.ethics-charter li.charter04 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis04-charter04.png) no-repeat left 6px;}
+.ethics-charter li.charter05 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis04-charter05.png) no-repeat left 6px;}
+.ethics-charter li.charter06 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis04-charter06.png) no-repeat left 6px;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > æ´ï¿½ì ™ï¿½ï¿½ ï¿½ï¿½ê¶— > äºŒì‡±ìŠ‚ï¿½ê³ ìº */
+.major-history-list {margin-top:16px;border-top:2px solid #a6a6a6;border-bottom:2px solid #a6a6a6;}
+.major-history-list li {padding:13px 10px;border-top:1px solid #dedede;line-height:22px;*zoom:1;}
+.major-history-list li:after {display:block;content:"";clear:both;}
+.major-history-list li > em {float:left;width:92px;color:#999;letter-spacing:0;}
+.major-history-list li > em + span {float:left;width:303px;color:#666;}
+.major-history-list li > em + span > img {padding-left:4px;vertical-align:middle;}
+.major-history-list li > em + span > a {color:#666;}
+.major-history-area .flow {position:relative;top:0;left:0;width:415px;}
+.major-history-area .flow h4 .cursor {display:inline-block;padding-top:4px;vertical-align:top;}
+.major-history-area .reverse {width:286px;margin-top:27px;}
+.major-history-area .major-link {width:659px;height:197px;margin:43px auto;}
+.major-history-area .major-link > a {display:inline-block;width:197px;height:197px;}
+.major-history-area .major-link > a + a {margin-left:24px;}
+.major-history-cont {padding:0 20px;}
+.major-history-cont .slide-thum-box {margin-top:-13px;}
+.help {display:inline-block !important;padding-top:5px !important;margin-top:2px;vertical-align:top;}
+.help-layer {display:none;position:absolute;top:30px;left:52px;width:245px;height:107px;padding:30px 20px 20px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-help-layer.png) no-repeat;}
+.help-layer > strong {color:#333;font-weight:bold;}
+.help-layer > p {margin-top:10px;}
+.help-layer > p > img {vertical-align:middle;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > æ´ï¿½ì ™ï¿½ï¿½ ï¿½ï¿½ê¶— > ï¿½ï¿½ï¿½ï¿½ë¨¯ì˜£ */
+.leaders-history {padding-top:35px;}
+.leaders-history > p:first-child {padding-left:20px;}
+.leaders-history .vertical-type2 {margin-top:50px;}
+.leaders-history .vertical-type2 td {border-left:1px solid #dedede;}
+.leaders-history .vertical-type2 td:first-child {border-left:none;}
+.leaders-history .vertical-type2 .pic-view {display:inline-block;width:21px;height:20px;background:url(https://eng.nis.go.kr/resources/img/ico/ico-pic-view.png) no-repeat;}
+.leaders-history .vertical-type2 .pic-view:hover {background:url(https://eng.nis.go.kr/resources/img/ico/ico-pic-view-on.png) no-repeat;}
+.leaders-history .vertical-type2 .pic-view > span {overflow:hidden;position:absolute;left:0;top:0;width:1px;height:1px;line-height:0;text-indent:-9999px;}
+.leaders-history .leaders-pic {position:relative;top:0;}
+.leaders-history .pic-view-layer {display:none;position:absolute;top:23px;left:0;width:107px;height:142px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-pic-view-layer.png) no-repeat;z-index:1;}
+.leaders-history .pic-view-layer > img {position:absolute;top:18px;left:9px;width:89px;height:115px;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > æ´ï¿½ì ™ï¿½ï¿½ ï¿½ï¿½ê¶— > æ´ï¿½ï¿½ï¿½ëº£ë‚«æ¹²ê³Œï¿½ï¿½ï¿½ ï§¡ìŽŒê½• */
+.origin-build-area {padding:52px 20px 38px 20px;}
+.origin-build-history {padding:20px 0;}
+.origin-build-history li + li {margin-top:4px;}
+.origin-build-wrap {padding:48px 0 30px 20px;border-top:2px solid #dedede;}
+.origin-build-cont + .origin-build-cont {margin-top:46px;}
+.origin-build-cont h4 {margin-bottom:8px !important;}
+.origin-build-cont h4 + .font-big {margin-top:19px;}
+.origin-build-cont p + p {margin-top:7px;}
+.origin-build-cont > .list li {margin-top:16px;}
+.origin-build-cont > .list li:first-child {margin-top:8px;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > æ´ï¿½ì ™ï¿½ï¿½ ï¿½ï¿½ê¶— > ï¿½ï¿½ï¿½ï¿½ë¨°ì• */
+.history-moral-area {padding:57px 0 0;border-top:2px solid #e5e5e5;}
+.history-moral-list .moral01 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis05-04-01-220623.png) no-repeat 16px 4px;}
+.history-moral-list .moral01:after{content:'01'; font-size: 60px; color: #eaeaea; position: absolute; font-size: 64px; color: #eaeaea; position: absolute; font-weight: bold;
+    top: -23px; z-index: -1; left: 232px; opacity: 0.7;}
+.history-moral-list .moral02 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis05-04-02-220623.png) no-repeat 16px 4px;}
+.history-moral-list .moral02:after{content:'02'; font-size: 60px; color: #eaeaea; position: absolute; font-size: 64px; color: #eaeaea; position: absolute; font-weight: bold;
+    top: -23px; z-index: -1; left: 232px; opacity: 0.7;}
+.history-moral-list .moral03 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis05-04-03-220623.png) no-repeat 16px 4px;}
+.history-moral-list .moral03:after{content:'03'; font-size: 60px; color: #eaeaea; position: absolute; font-size: 64px; color: #eaeaea; position: absolute; font-weight: bold;
+    top: -23px; z-index: -1; left: 232px; opacity: 0.7;}
+.history-moral-list .moral04 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis05-04-04-220623.png) no-repeat 16px 4px;}
+.history-moral-list .moral04:after{content:'04'; font-size: 60px; color: #eaeaea; position: absolute; font-size: 64px; color: #eaeaea; position: absolute; font-weight: bold;
+    top: -23px; z-index: -1; left: 232px; opacity: 0.7;}
+    .history-moral-list .moral05 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis05-04-05-220623.png) no-repeat 16px 4px; background-size: 175px auto; background-position-y: center;}
+.history-moral-list .moral05:after{content:'05'; font-size: 60px; color: #eaeaea; position: absolute; font-size: 64px; color: #eaeaea; position: absolute; font-weight: bold;
+    top: -23px; z-index: -1; left: 232px; opacity: 0.7;}
+.history-moral-list li {padding:27px 0 0 216px; position: relative;}
+.history-moral-list li + li {margin-top:55px;}
+.history-moral-list li .moral-tit {display:block;padding-left:21px;color:#333;font-weight:bold;font-size:16px;font-family:"Segoe UI Semibold","Segoe UI";font-weight:600;}
+.history-moral-list li .moral-dic {margin-top:10px;padding:16px 21px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+.history-moral-list li .moral-dic .dic-tit {color:#4f689b;font-size:18px;font-weight:bold;font-family:"Segoe UI Semibold","Segoe UI";font-weight:600;}
+.history-moral-list li .moral-dic .dic-tit + p {margin-top:15px;}
+.history-moral-list li .moral-dic p {line-height:24px;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > æ„¿ï¿½ï¿½â‘¤ì¾¿ï¿½ï¿½ > ï¿½ë‚…ì¾¿ï¿½ë‡í€¬ */
+.datepicker-area + .btn {margin-left:17px;}
+.total-area {margin:0 0 10px;text-align:right;}
+.total-area span {color:#e26e28;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > ï¿½ì‡³ê½£ ï¿½ëš­ì»» > æ´ï¿½ï¿½ï¿½ÑŠì” è¸°ê¾©ë¸žï¿½ê¾©ê½±ï¿½ï¿½ */
+.cyber-major-title {padding:33px 0 4px 20px;}
+.cyber-major-work {margin-top:-20px;}
+.cyber-major-work .major-acitve ul {margin-top:10px;padding:0px 0 0 208px;}
+.cyber-major-work .major-acitve ul li + li {margin-top:7px;}
+.cyber-major-work .major-acitve.active01 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-cyber-major-work01.gif) no-repeat 0 41px;}
+.cyber-major-work .major-acitve.active02 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-cyber-major-work02.gif) no-repeat 0 41px;}
+.cyber-major-work .major-acitve.active03 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-cyber-major-work03.gif) no-repeat 0 41px;}
+.cyber-major-work .major-acitve.active04 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-cyber-major-work04.gif) no-repeat 0 41px;}
+.cyber-major-work .major-acitve + .major-acitve {margin-top:31px;}
+.year-hst-cont {margin-top:13px;*zoom:1;}
+.year-hst-cont + .year-hst-cont {margin-top:60px;}
+.year-hst-cont:after {display:block;content:"";clear:both;}
+.year-hst-cont > em {float:left;width:54px;color:#9a7a65;}
+.year-hst-cont > ul {float:left;}
+.year-hst-cont > ul li {background:url(https://eng.nis.go.kr/resources/img/bg/bg-history-dot.png) no-repeat 0 7px;*zoom:1;}
+.year-hst-cont > ul li:after {display:block;content:"";clear:both;}
+.year-hst-cont > ul li > em {float:left;width:90px;padding-left:20px;color:#999;letter-spacing:0;}
+.year-hst-cont > ul li > span {float:left;width:595px;}
+.year-hst-cont > ul li + li {margin-top:-7px;padding-top:28px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-history-dot-line.png) no-repeat 0 104%;}
+.cyber-ro {margin-top:25px;padding:0 20px;}
+.list-cyber-ro li {float:left;}
+.list-cyber-ro li + li {margin:0 0 10px 10px;}
+.list-cyber-ro li + li + li + li {margin: 0 10px 0 0;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > ï¿½ì‡³ê½£ ï¿½ëš­ì»» > ï¿½ê³—ë¾½æ¹²ê³•ï¿½è¹‚ëŒ„ìƒ‡ï¿½ì‡³ê½£ */
+.segoe-bold h4 {font-family:"Segoe UI Semibold","Segoe UI";font-weight:600;}
+.major-work-intro {padding:33px 0 4px 20px;}
+.major-work-intro.under_line {padding:33px 0 40px 20px; border-bottom: 2px solid #d9d9d9;}
+.major-work-intro h4 {margin-bottom:7px !important;}
+.major-work-intro p + p {margin-top:7px;}
+.major-work {padding:43px 20px 0;}
+.major-acitve {min-height:170px;margin-top:19px;}
+.major-acitve strong {font-size:18px;font-family:"Segoe UI Semibold","Segoe UI";font-weight:600}
+.major-acitve ul {margin-top:10px;padding:0 0 0 240px;}
+.major-acitve ul li + li {margin-top:10px !important;}
+.major-acitve .major-atv-txt {margin-top:10px;padding:0 0 0 240px;}
+.major-acitve.active01 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-major-work01.gif) no-repeat 0 40px;}
+.major-acitve.active02 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-major-work02.gif) no-repeat 0 40px;}
+.major-acitve.active03 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-major-work03.gif) no-repeat 0 40px;}
+.major-acitve.active04 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-major-work04.gif) no-repeat 0 40px;}
+.major-acitve.active05 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-major-work05.gif) no-repeat 0 40px;}
+.major-acitve.active06 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-major-work06.gif) no-repeat 0 40px;}
+.major-acitve + .major-acitve {margin-top:23px;}
+
+.security .major-acitve.active01 {background:url(https://eng.nis.go.kr/resources/img/major-work01.png) no-repeat 0 66px;}
+.security .major-acitve.active02 {background:url(https://eng.nis.go.kr/resources/img/major-work02.png) no-repeat 0 40px;}
+.security .major-acitve.active03 {background:url(https://eng.nis.go.kr/resources/img/major-work03.png) no-repeat 0 40px;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > ï¿½ì‡³ê½£ ï¿½ëš­ì»» > æ´ï¿½ì £è¸°ë¶¿ì¦²ï¿½ëº£ë‚«ï¿½ì‡³ê½£ */
+.crime-area {padding:43px 0 0 20px;}
+.crime-area-list {margin-top:15px;}
+.crime-area-list ul {margin:-38px 0 0 -30px;*zoom:1;}
+.crime-area-list ul:after {display:block;content:"";clear:both;}
+.crime-area-list ul li {float:left;width:233px;min-height:178px;margin:38px 0 0 30px;padding-top:180px;}
+.crime-area-list ul li p {padding-top:10px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-03-crime-txt.png) no-repeat;line-height:24px;}
+.crime-area-list ul li.crime-atv01 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-crime01.gif) no-repeat;}
+.crime-area-list ul li.crime-atv02 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-crime02.gif) no-repeat;}
+.crime-area-list ul li.crime-atv03 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-crime03.gif) no-repeat;}
+.crime-area-list ul li.crime-atv04 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-crime04.gif) no-repeat;}
+.crime-area-list ul li.crime-atv05 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-crime05.gif) no-repeat;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > ï¿½ì‡³ê½£ ï¿½ëš­ì»» > ï¿½ëš®ìœ­ï¿½ëº£ë‚«ï¿½ë“¯ë¹€ï¿½ì‡³ê½£ */
+.crime-area-list ul li.terror-atv01 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-terror01.gif) no-repeat;}
+.crime-area-list ul li.terror-atv02 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-terror02.gif) no-repeat;}
+.crime-area-list ul li.terror-atv03 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-terror03.gif) no-repeat;}
+.crime-area-list ul li.terror-atv04 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-terror04.gif) no-repeat;}
+.crime-area-list ul li.terror-atv05 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-terror05.gif) no-repeat;}
+.crime-area-list ul li.terror-atv06 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-terror06.gif) no-repeat;}
+.crime-area-list.terror ul {margin:-40px 0 0 -30px;}
+.crime-area-list.terror ul li {min-height:110px;margin:40px 0 0 30px;}
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > CI ï¿½ëš­ì»» */
+.ci-introduce {margin-top:40px;}
+.ci-introduce h4 {margin-bottom:6px !important;}
+.ci-introduce h4 + p {line-height:24px;}
+.ci-introduce .tab-contents {padding:0 20px;}
+.ci-introduce .sym{vertical-align:-3px}
+.tab-area.brown-type.line2.col4 .tabs.atv a.line1 {height:47px;}
+.tab-area.brown-type.line2.col4 .tabs a.line1 {height:48px;}
+.with-img {margin-top:15px;*zoom:1;}
+.with-img:after {display:block;content:"";clear:both;}
+.with-img > img {float:left;width:256px;}
+.with-img .ci-disc {float:left;width:436px;margin-left:40px;}
+.with-img .ci-disc > strong {display:block;font-weight:bold;font-size:18px;line-height:22px;font-family:"Segoe UI Semibold","Segoe UI";font-weight:600;}
+.with-img .ci-disc > strong + p {margin:5px 0;}
+.with-img .ci-disc p {line-height:24px;}
+.with-img .ci-disc p + p {margin-top:9px;}
+.with-img .ci-disc p + strong {margin-top:13px;}
+.with-img + h4 {margin-top:42px;}
+.with-img-db {margin-top:15px;}
+.with-img-db > img + img {margin-left:40px;}
+.with-img-db .ci-disc {margin:20px 0 44px;}
+.solo-img {margin-top:15px;}
+.solo-img img + img {margin-left:36px;}
+.solo-img + h4 {margin-top:40px;}
+.attach-file {color:#0070c0; text-decoration:underline !important;}
+#container #contents p + h4 {margin:46px 0 7px 0;}
+
+.ci-color{margin-top:10px}
+.ci-color .c-type{display:inline-block}
+.ci-color .c-type+.c-type{margin-left:36px}
+.ci-color .c-type .box{display:inline-block;width:200px;height:45px;box-sizing:border-box}
+.ci-color .c-type .txt{margin-top:2px}
+
+/* æ´ï¿½ï¿½æ€¨ì‡³ë¸¿çŒ¿ï¿½ - å¯ƒÑ‹ë¸°ï¿½ì¢Žê»Œ > ï¿½ëˆë‚«ï¿½ê¾©ë–†æ„¿ï¿½ */
+.scroll-box {overflow:hidden;overflow-y:auto;max-height:459px;padding:20px;border:1px solid #ccc;}
+.scroll-box02 {overflow:hidden;overflow-y:auto;height:300px;max-height:300px;padding:20px;}
+.edit-area {padding:20px;min-height:300px; word-break: keep-all !important;}
+.edit-area p { word-break: keep-all !important; }
+
+/* æ´ï¿½ï¿½æ€¨ì‡³ë¸¿çŒ¿ï¿½ - æ„¿ï¿½ï¿½ëš¯ì‚ï¿½ï¿½ > äºŒì‡±ëƒ¼ï§¡ì–˜ë¦° ï¿½ë‰ì” ï¿½ï¿½ */
+.btn-confirm.blue {margin-top:74px;background:#7c96ca;}
+
+/* æ´ï¿½ï¿½æ€¨ì‡³ë¸¿çŒ¿ï¿½ - ï¿½ëŒì«° ï§â‘¸ì¤‰ */
+.clearfix > h4.flow {margin-bottom:0 !important;}
+.clearfix > h5.flow {padding-top:0 !important;}
+
+
+/* æ´ï¿½ï¿½ï¿½ëº£ë‚«ï¿½ï¿½ > ï¿½ì‡³ê½£ ï¿½ëš­ì»» > è«›â‘¹êº½ï¿½ëº£ë‚«æ€¨ë“­ì‘€ï¿½ì‡³ê½£ */
+.ncic-work-intro{padding:33px 0 4px 20px}
+.ncic-work-intro p+p{margin-top:40px}
+
+.counter-espionage .counter-list ul {margin:-35px 0 0 -30px;}
+.counter-espionage .counter-list ul:after {display:block;content:"";clear:both;}
+.counter-espionage .counter-list ul li {float:left;width:233px;margin:38px 0 0 30px;padding-top:180px;min-height:64px}
+
+.counter-espionage .counter-list ul li p {padding-top:16px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-03-crime-txt.png) no-repeat;line-height:24px;}
+.counter-espionage .counter-list ul li.active01 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counter01.jpg) no-repeat;}
+.counter-espionage .counter-list ul li.active02 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counter02.jpg) no-repeat;}
+.counter-espionage .counter-list ul li.active03 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counter03.jpg) no-repeat;}
+.counter-espionage .counter-list ul li.active04 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counter04.jpg) no-repeat;}
+.counter-espionage .counter-list ul li.active05 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counter05.jpg) no-repeat;}
+.counter-espionage .counter-list ul li.active06 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counter06.jpg) no-repeat;}
+
+
+/* è«›â‘¹êº½ï¿½ëº£ë‚«æ€¨ë“­ì‘€ï¿½ì‡³ê½£  GI ï¿½ëš­ì»» */
+.ncic .padding-box3{padding-right:0}
+.ncic h4+p+p{margin-top:28px}
+.ncic .solo-img img + img{margin-left:25px}
+.ncic p + h4, .ncic .solo-img + h4{margin-top:50px !important;}
+
+/* 20210603 GI */
+.gi-img{display:inline-block;margin-top:25px}
+.gi-desc li{margin-top:30px}
+.gi-desc li strong{display:block;color:#00357e}
+
+/*.moral-area{padding-top:275px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis03.png) no-repeat;background-position:center 45px; text-align: center;}*/
+.moral-area{padding-top:30px; no-repeat;background-position:center 45px; text-align: center;}
+.moral-list em{display:block;font-size:18px;color:#6c6967;margin-bottom:15px;font-weight:bold}
+
+/*20220614*/
+#container #contents.dutivision h4{font-size: 34px; color: #0351c5; position: relative; display: inline-block; padding-bottom: 5px; margin-bottom: 25px; padding-top: 60px;}
+#container #contents.dutivision h4:after{content: ''; display: block; position: absolute; height: 3px; width: 100%; left: 0; right: 0; bottom: 0; background: #0351c5;}
+#container #contents.dutivision strong{display: block; font-size: 20px; color: #2d2d37; font-weight: 600; letter-spacing: -0.02em;}
+#container #contents.dutivision ol li{font-size: 17px; margin-top: 30px; color: #57575f;}
+#container #contents.dutivision ol li strong{color: #57575f; font-size: 17px;}
+
+/* 20230525 */
+.Counterproliferation .counter-list ul {margin:-35px 0 0 -30px;}
+.Counterproliferation .counter-list ul:after {display:block;content:"";clear:both;}
+.Counterproliferation .counter-list ul li {float:left;width:233px;margin:38px 0 0 30px;padding-top:180px;min-height:64px}
+
+.Counterproliferation .counter-list ul li p {padding-top:16px;background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-03-crime-txt.png) no-repeat;line-height:24px;}
+.Counterproliferation .counter-list ul li.active01 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counterproliferation01.jpg) no-repeat;}
+.Counterproliferation .counter-list ul li.active02 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counterproliferation02.jpg) no-repeat;}
+.Counterproliferation .counter-list ul li.active03 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counterproliferation03.jpg) no-repeat;}
+.Counterproliferation .counter-list ul li.active04 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis07-counterproliferation04.jpg) no-repeat;}
+
+
+.Counterproliferation .counter-list ul li.active05 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis08-nssc01.jpg) no-repeat;}
+.Counterproliferation .counter-list ul li.active06 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis08-nssc02.jpg) no-repeat;}
+.Counterproliferation .counter-list ul li.active07 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis08-nssc03.jpg) no-repeat;}
+.Counterproliferation .counter-list ul li.active08 {background:url(https://eng.nis.go.kr/resources/img/bg/bg-nis08-nssc04.jpg) no-repeat;}
+
