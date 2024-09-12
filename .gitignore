@@ -1,0 +1,36 @@
+# Ignore node_modules if using a package manager like npm
+node_modules/
+
+# Ignore logs
+logs/
+*.log
+npm-debug.log*
+
+# Ignore build output
+dist/
+build/
+
+# Ignore compiled templates
+*.html.compiled
+
+# Ignore environment variables file
+.env
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore SASS/SCSS cache
+.sass-cache/
+
+# Ignore dependencies that may be generated locally
+vendor/
