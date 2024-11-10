@@ -1,8 +1,8 @@
-<div class="hgroup">
+<div class="hgroup"> 
   <h2>Kimsuky - APT43</h2>
 </div>
 
-<h3><span>Kenneth Riel</span></h3>
+<h3><span>Kiara Catalano and Kenneth Riel</span></h3>
 
 <h1 class="title">Kimsuky - APT43 Disclaimer</h1>
 <p class="cont_txt">
@@ -11,47 +11,101 @@ Please note that the cyber espionage activities of Kimsuky, also known as APT43,
 
 <h2 class="cont_tit">Kimsuky - APT43 Overview</h2>
 <p class="cont_txt">
-Kimsuky is a North Korean threat actor group, linked to the North Korean government, known for targeting government, research, and defense sectors in countries including South Korea, the United States, and Japan. Since at least 2012, Kimsuky has been involved in cyber espionage, utilizing various malware tools to collect intelligence and exploit critical vulnerabilities.
+Kimsuky, also known as APT43, Thallium, Black Banshee, Velvet Chollima, and Emerald Sleet, is a North Korean threat actor group associated with the North Korean government. Active since at least 2012 and first identified in 2013 by Kaspersky researchers, Kimsuky has been involved in cyber espionage targeting government, research, and defense sectors in countries including South Korea, the United States, and Japan. The group primarily targets government agencies, think tanks, media, and nuclear sectors, focusing on gathering intelligence. Kimsuky is believed to have connections to other North Korean APT groups such as Lazarus and APT37 (Reaper).
 </p>
 
 <h2 class="cont_tit">Offensive Cyber Strategy</h2>
 
 <h3>Phishing Campaigns - Initial Access Tool</h3>
 <p class="cont_txt">
-Phishing campaigns are essential for initiating access in cyber espionage. Kimsuky has used tailored spear-phishing attacks to exploit vulnerabilities in target organizations, establishing footholds for further data gathering.
+Phishing campaigns are essential for initiating access in cyber espionage. Kimsuky has used tailored spear-phishing attacks to exploit vulnerabilities in target organizations, establishing footholds for further data gathering. They create spoofed and fraudulent personas for social engineering use, masquerade as key individuals in their target area, and leverage stolen personally identifiable information (PII) to create accounts and register domains.
 </p>
 
 <h3>Malware Implants - Persistence and Data Collection</h3>
 <p class="cont_txt">
-Kimsuky deploys custom malware such as BabyShark and Gold Dragon, designed to maintain persistence within networks, conduct reconnaissance, and exfiltrate sensitive information to North Korean command centers.
+Kimsuky deploys custom malware such as BabyShark, Gold Dragon, and SWEETDROP, designed to maintain persistence within networks, conduct reconnaissance, and exfiltrate sensitive information to North Korean command centers. BabyShark malware is used to collect data and is often delivered through spear-phishing emails. Gold Dragon is a data-gathering tool that can perform basic reconnaissance, data extraction, and download additional components from its command and control (C2) server, ensuring a lasting presence on victims' systems. SWEETDROP is a malware dropper that collects basic system information.
 </p>
 
-<h3>Escad Malware - Data Collection and Exfiltration</h3>
-<p class="cont_txt">
-Escad, a variant of Destroyer, functions as a backdoor for intelligence gathering. Kimsuky uses Escad to monitor infected networks, gather intelligence, and conduct discrete data exfiltration operations.
-</p>
+<h3>Exploited Vulnerabilities</h3>
+<ul class="cont_txt">
+  <li><strong>CVE-2017-0199:</strong> Exploited to deliver BabyShark malware via malicious Microsoft Office documents.</li>
+  <li><strong>HWP Exploits:</strong> Hangul Word Processor files widely used in South Korea.</li>
+  <li><strong>CVE-2015-2545:</strong> Microsoft Office vulnerability allowing remote code execution through EPS image files.</li>
+  <li><strong>CVE-2019-0604:</strong> Microsoft SharePoint vulnerability to execute arbitrary code.</li>
+</ul>
+
+<h3>Tactics, Techniques, and Procedures (TTPs)</h3>
+<ul class="cont_txt">
+  <li><strong>T1082:</strong> System Information Discovery.</li>
+  <li><strong>T1083:</strong> File and Directory Discovery.</li>
+  <li><strong>T1129:</strong> Execution through Module Load.</li>
+  <li><strong>T1055:</strong> Process Injection.</li>
+  <li><strong>T1071:</strong> Application Layer Protocol.</li>
+</ul>
+
+<h2 class="cont_tit">Notable Attacks</h2>
+
+<h3>UN Security Council Attack (2020)</h3>
+<ul class="cont_txt">
+  <li><strong>Overview:</strong> Between March and April 2020, the Kimsuky group attempted to compromise the accounts of several UN officials through spear-phishing, aiming to access or spread malware onto the victims' systems.</li>
+  <li><strong>Techniques:</strong> The group used spear-phishing emails and messages, posing as UN security alerts or requests from journalists for interviews, to lure officials into accessing phishing pages. These attempts were made via email and communication platforms such as WhatsApp.</li>
+</ul>
+
+<h3>Operation Stolen Pencil (December 2018)</h3>
+<ul class="cont_txt">
+  <li><strong>Overview:</strong> This operation targeted academia and research institutions, primarily in regions with ties to South Korean policy matters.</li>
+  <li><strong>Techniques:</strong> Kimsuky used spear-phishing emails to lure victims to websites that appeared to be legitimate academic organizations. Victims were then prompted to install a malicious Google Chrome extension capable of stealing cookies and passwords from the browser, process memory, network sniffing, and keylogging. The specific goals of this attack remain unknown.</li>
+</ul>
 
 <h2 class="cont_tit">Legal Issues Governing the Authorized Conduct of South Korean Offensive Cyber Operations</h2>
 <p class="cont_txt">
 South Korean cyber doctrine emphasizes several legal considerations relevant to countering operations like those conducted by Kimsuky. Relevant laws include:
 </p>
 <ul class="cont_txt">
-<li><strong>Personal Information Protection Act (PIPA):</strong> Governs the protection of South Korean citizens’ personal data.</li>
-<li><strong>Critical Information Infrastructure Protection Act (CIIPA):</strong> Outlines protections for data related to national security.</li>
-<li><strong>Information and Communications Network Act (ICNA):</strong> Provides guidelines on network and data protection for service providers.</li>
+  <li><strong>Personal Information Protection Act (PIPA):</strong> Governs the protection of South Korean citizens’ personal data.</li>
+  <li><strong>Critical Information Infrastructure Protection Act (CIIPA):</strong> Outlines protections for data related to national security.</li>
+  <li><strong>Information and Communications Network Act (ICNA):</strong> Provides guidelines on network and data protection for service providers.</li>
 </ul>
 
 <h2 class="cont_tit">Summary of Offensive Tools, Techniques, Technology, and Data</h2>
 <p class="cont_txt">
-Primary tools associated with Kimsuky's offensive strategy include:
+Primary tools and techniques associated with Kimsuky's offensive strategy include:
 </p>
 <ul class="cont_txt">
-<li><strong>Phishing Campaigns:</strong> Key for establishing initial access through social engineering.</li>
-<li><strong>Custom Malware:</strong> Maintains persistence and enables comprehensive intelligence gathering.</li>
-<li><strong>Escad Malware:</strong> Facilitates covert data exfiltration and intelligence collection.</li>
+  <li><strong>Phishing Campaigns:</strong> Key for establishing initial access through social engineering. Kimsuky creates spoofed personas, masquerades as key individuals, and uses stolen PII to enhance the credibility of their phishing attempts.</li>
+  <li><strong>Custom Malware:</strong> Maintains persistence and enables comprehensive intelligence gathering. Notable malware includes BabyShark, Gold Dragon, and SWEETDROP.</li>
+  <li><strong>Exploited Vulnerabilities:</strong> Kimsuky exploits known vulnerabilities to deliver malware, such as:
+    <ul>
+      <li>CVE-2017-0199: Exploited to deliver BabyShark malware via malicious Microsoft Office documents.</li>
+      <li>HWP Exploits: Hangul Word Processor files widely used in South Korea.</li>
+      <li>CVE-2015-2545: Microsoft Office vulnerability allowing remote code execution through EPS image files.</li>
+      <li>CVE-2019-0604: Microsoft SharePoint vulnerability to execute arbitrary code.</li>
+    </ul>
+  </li>
+  <li><strong>Tactics, Techniques, and Procedures (TTPs):</strong>
+    <ul>
+      <li>T1082: System Information Discovery.</li>
+      <li>T1083: File and Directory Discovery.</li>
+      <li>T1129: Execution through Module Load.</li>
+      <li>T1055: Process Injection.</li>
+      <li>T1071: Application Layer Protocol.</li>
+    </ul>
+  </li>
 </ul>
 
 <h2 class="cont_tit">Defensive Cyber Strategy</h2>
+
+<h3>Detection Strategies</h3>
+<p class="cont_txt">
+To effectively defend against Kimsuky's activities, understanding their methods is crucial. This includes familiarity with their common attack vectors (spear-phishing, malicious Chrome extensions, exploiting known vulnerabilities, watering hole attacks), file types (Microsoft Word, Hangul Word Processor files), and threat categories (trojan, downloader, dropper). Recommended strategies include:
+</p>
+<ul class="cont_txt">
+  <li>Being vigilant about domains previously used by Kimsuky to carry out objectives.</li>
+  <li>Educating and training staff to recognize phishing emails and malicious attachments.</li>
+  <li>Monitoring for suspicious activity within networks.</li>
+  <li>Utilizing advanced security software and tools such as Next-Generation Firewalls (NGFW), Security Information and Event Management (SIEM) systems, and Extended Detection and Response (XDR) solutions.</li>
+  <li>Collaborating with other organizations to share information on threats and incidents.</li>
+</ul>
 
 <h3>Next-Generation Firewalls (NGFW) - Network Security Tool</h3>
 <p class="cont_txt">
@@ -68,13 +122,24 @@ SIEM solutions like Splunk or Sentinel aggregate and analyze security logs, enab
 XDR platforms provide comprehensive endpoint security, ensuring quick identification and response to threats across all entry points, enhancing the overall security posture.
 </p>
 
+<h3>Tracking Plan</h3>
+<ul class="cont_txt">
+  <li>Monitor the countries and sectors that Kimsuky frequently attacks:
+    <ul>
+      <li><strong>Countries:</strong> South Korea, Japan, Europe, United States.</li>
+      <li><strong>Sectors:</strong> Government, business services, manufacturing, education, research, and think tanks focused on geopolitical and nuclear policy.</li>
+    </ul>
+  </li>
+  <li>Monitor breaches and attacks around the world for potential indicators of Kimsuky's activities.</li>
+</ul>
+
 <h2 class="cont_tit">Legal Issues Governing the Authorized Conduct of South Korean Defensive Cyber Operations</h2>
 <p class="cont_txt">
 South Korean defensive operations must comply with the following laws:
 </p>
 <ul class="cont_txt">
-<li><strong>Information and Communications Network Act (ICNA):</strong> Requires security measures for essential digital assets, with penalties for non-compliance.</li>
-<li><strong>Critical Information Infrastructure Protection Act (CIIPA):</strong> Mandates the safeguarding of critical infrastructure data essential to national security.</li>
+  <li><strong>Information and Communications Network Act (ICNA):</strong> Requires security measures for essential digital assets, with penalties for non-compliance.</li>
+  <li><strong>Critical Information Infrastructure Protection Act (CIIPA):</strong> Mandates the safeguarding of critical infrastructure data essential to national security.</li>
 </ul>
 
 <h2 class="cont_tit">Summary of Defensive Tools, Techniques, Technology, and Data</h2>
@@ -82,7 +147,7 @@ South Korean defensive operations must comply with the following laws:
 Recommended defensive measures include:
 </p>
 <ul class="cont_txt">
-<li><strong>Next-Generation Firewall:</strong> Provides robust network intrusion detection and prevention.</li>
-<li><strong>SIEM Platform:</strong> Aggregates and analyzes data for efficient threat detection and response.</li>
-<li><strong>XDR Solution:</strong> Delivers comprehensive visibility and quick response capabilities for endpoint security.</li>
+  <li><strong>Next-Generation Firewall:</strong> Provides robust network intrusion detection and prevention.</li>
+  <li><strong>SIEM Platform:</strong> Aggregates and analyzes data for efficient threat detection and response.</li>
+  <li><strong>XDR Solution:</strong> Delivers comprehensive visibility and quick response capabilities for endpoint security.</li>
 </ul>
